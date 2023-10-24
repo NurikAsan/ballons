@@ -1,0 +1,21 @@
+.composition
+    position: relative
+    &__photo
+        width: 50%
+        position: absolute
+        z-index: 5
+        transition: .4s all
+        outline-offset: 1rem
+        &-n1
+            top: 0
+            left: 0rem
+        &-n2
+            top: 4rem
+            right: 5rem
+        &-n3
+            top: 13rem
+            left: 2rem
+        &:hover
+            outline: 1rem solid $color-brown-light
+            transform: scale(1.5)      
+            z-index: 10  

@@ -1,0 +1,32 @@
+.button-first
+    width: 27.7rem
+    height: 5.4rem
+    border-radius: 5rem
+    border: none
+    background: $color-white
+    font-size: 2rem
+    padding: 1.5rem 4rem
+    position: relative
+    &__animation
+        animation: downToUp 1.7s 
+        animation-delay: 1s
+        backface-visibility: hidden
+    &::after
+        content: ""
+        width: 100%
+        height: 100%
+        border-radius: 5rem
+        background: $color-white
+        position: absolute
+        top:  0
+        left: 0
+        z-index: -1
+        transition: all .7s
+    &:active
+        transform: translateY(-.2rem)
+    &:hover
+        transform: translateY(-.4rem)
+        &::after
+            content: ""
+            transform: scale(1.4)
+            opacity: 0
