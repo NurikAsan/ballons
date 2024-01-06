@@ -1,0 +1,26 @@
+.footer
+    padding: 8rem
+    background: #333333
+    text-align: center
+    &__logo
+        width: 12rem
+    &__list
+        list-style: none
+    &__item
+        display: inline-block
+        &:not(&:last-child)
+            margin-right: 5rem
+            @include respond(tab-land)
+                margin-right: 1.7rem
+
+    &__link
+        text-decoration: none
+        &:link, &:visited
+            color: $color-gray
+            text-transform: uppercase
+            font-weight: 300
+            letter-spacing: 0.2rem
+            font-size: 1.6rem
+        &:hover
+            color: $color-brown-light
+    

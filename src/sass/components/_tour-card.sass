@@ -1,8 +1,79 @@
 .card-tour
-    background: red
     height: 50rem
-    transition: 1s all
     perspective: 150rem
     -moz-perspective: 150rem
-    &:hover
-        transform: rotateY(180deg)
+    position: relative
+    background: $color-white
+    &__side
+        position: absolute
+        transition: .8s all
+        height: 50rem
+        color: $color-white
+        width: 100%
+        backface-visibility: hidden
+        &-back
+            transform: rotateY(180deg)
+            background: linear-gradient(120deg, rgba(186, 133, 84) 0.03%, $color-brown-dark 99.94%)
+
+
+    &:hover &__side-back
+        transform: rotateY(0deg)
+    &:hover &__side-front
+        transform: rotateY(-180deg)
+    
+    &__img
+        height: 20rem
+        background:  url(../img/Photo-card-1.jpg) center/cover no-repeat
+        clip-path: polygon(0 0,100% 0,100% 100%,0 80%)
+
+    &__title
+        color: #FFF
+        text-align: right
+        font-size: 2.8rem
+        font-weight: 300
+        letter-spacing: .2rem
+        position: absolute
+        top: 17rem
+        right: 0
+    &__span
+        background: linear-gradient(90deg,rgba(186, 133, 84, 0.70), $color-brown-dark)
+        padding: 1rem 2rem
+        &-2
+            position: absolute
+            top: 4rem
+            right: 0
+    
+    &__describe
+        ul
+            list-style: none
+            margin: 0 auto
+            width: 70%
+            li
+                color: $color-gray
+                font-size: 1.6rem
+                font-weight: 700
+                letter-spacing: .2rem
+                text-decoration-line: underline
+                &:not(&:last-child)
+                    margin-bottom: 2rem
+                @include respond(tab-land)
+                    font-size: 1.5rem
+
+                    
+    &__backside-box
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+    &__text
+        margin-bottom: 8rem
+        letter-spacing: .2rem
+        text-align: center
+        color: #FFF
+        &-1
+            font-size: 1.6rem
+            font-weight: 300
+        &-2
+            font-size: 6rem
+            font-weight: 500
+            

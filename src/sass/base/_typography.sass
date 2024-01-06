@@ -8,6 +8,8 @@ body
 .title-first
     margin-bottom: 5rem
     color: $color-white
+    @include respond(tab-land)
+        margin-bottom: 4.5rem
     &__main
         display: block
         font-weight: 80rem
@@ -19,6 +21,9 @@ body
         animation-duration: 1.7s
         animation-delay: 1s 
         backface-visibility: hidden
+        @include respond(tab-land)
+            font-size: 4rem
+
     &__submain
         display: block
         font-size: 4rem
@@ -29,6 +34,8 @@ body
         animation-duration: 1.7s
         animation-delay: 1s 
         backface-visibility: hidden
+        @include respond(tab-land)
+            font-size: 3.5rem
 
 .title-secondary
     font-size: 3.6rem
@@ -38,16 +45,25 @@ body
     background: linear-gradient(90deg, rgba(186, 133, 84, 0.70) 0.03%, rgba(1, 1, 1, 0.70) 99.94%)
     -webkit-background-clip: text
     color: transparent
+    @include respond(tab-land)
+        font-size: 3rem
+
     &:hover
         transform: skewY(2deg) skewX(15deg) scale(1.1)
         text-shadow: $shadow-h2
         transition: all 0.4s
+    &__white
+        color:$color-white
+        font-weight: 800
+        letter-spacing: 1rem
 
 .title-third
     color: $color-gray
     font-size: 2rem
     font-weight: 700
     letter-spacing: .2rem
+    @include respond(tab-land)
+        font-size: 1.7rem
 
 .paragraph
     color: $color-gray
@@ -55,5 +71,7 @@ body
     font-weight: 400
     line-height: 2.2rem
     letter-spacing: .2rem
+    @include respond(tab-land)
+        font-size: 1.4rem
 
     

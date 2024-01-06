@@ -14,6 +14,24 @@
 
 <body>
     <div class="container">
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__toggle" id="nav-toogle">
+            <label for="nav-toogle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+            <div class="navigation__background"></div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">о нас</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">скидки</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">лучшие туры</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">калькулятор цен</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">связаться с нами</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <header class="header">
             <img src="src/img/Icon-logo.svg" alt="iconka" class="header__logo">
             <div class="header__box">
@@ -96,7 +114,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="section-tour">
                 <div class="tac mb-80">
                     <h2 class="title-secondary mb-80">НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</h2>
@@ -104,23 +122,214 @@
                 <div class="row">
                     <div class="col-1-of-3">
                         <div class="card-tour">
-                            
+                            <div class="card-tour__side card-tour__side-front">
+                                <div class="card-tour__img mb-80"> </div>
+                                <h4 class="card-tour__title"><span
+                                        class="card-tour__span card-tour__span-1">ГРУППОВЫЕ</span> <br>
+                                    <span class="card-tour__span card-tour__span-2">ТУРЫ</span>
+                                </h4>
+                                <div class="card-tour__describe">
+                                    <ul>
+                                        <li>Группы от 6 человек</li>
+                                        <li>Продолжительность 2 час</li>
+                                        <li>В группе 1 гид</li>
+                                        <li>Дальность полета 6км</li>
+                                        <li>Бесплатные сувениры</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-tour__side card-tour__side-back">
+                                <div class="card-tour__backside-box">
+                                    <p class="card-tour__text card-tour__text-1">ПОЛНАЯ СТОИМОСТЬ:</p>
+                                    <p class="card-tour__text card-tour__text-2">5990₽</p>
+                                    <a class="btn__a">
+                                        ЗАБРОНИРОВАТЬ
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-1-of-3">
-                        col-2-of-3
+                        <div class="card-tour">
+                            <div class="card-tour">
+                                <div class="card-tour__side card-tour__side-front">
+                                    <div class="card-tour__img mb-80"> </div>
+                                    <h4 class="card-tour__title"><span
+                                            class="card-tour__span card-tour__span-1">ГРУППОВЫЕ</span> <br>
+                                        <span class="card-tour__span card-tour__span-2">ТУРЫ</span>
+                                    </h4>
+                                    <div class="card-tour__describe">
+                                        <ul>
+                                            <li>Группы от 6 человек</li>
+                                            <li>Продолжительность 2 час</li>
+                                            <li>В группе 1 гид</li>
+                                            <li>Дальность полета 6км</li>
+                                            <li>Бесплатные сувениры</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-tour__side card-tour__side-back">
+                                    <div class="card-tour__backside-box">
+                                        <p class="card-tour__text card-tour__text-1">ПОЛНАЯ СТОИМОСТЬ:</p>
+                                        <p class="card-tour__text card-tour__text-2">5990₽</p>
+                                        <a class="btn__a">
+                                            ЗАБРОНИРОВАТЬ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-1-of-3">
-                        col-2-of-3
+                        <div class="card-tour">
+                            <div class="card-tour">
+                                <div class="card-tour__side card-tour__side-front">
+                                    <div class="card-tour__img mb-80"> </div>
+                                    <h4 class="card-tour__title"><span
+                                            class="card-tour__span card-tour__span-1">ГРУППОВЫЕ</span> <br>
+                                        <span class="card-tour__span card-tour__span-2">ТУРЫ</span>
+                                    </h4>
+                                    <div class="card-tour__describe">
+                                        <ul>
+                                            <li>Группы от 6 человек</li>
+                                            <li>Продолжительность 2 час</li>
+                                            <li>В группе 1 гид</li>
+                                            <li>Дальность полета 6км</li>
+                                            <li>Бесплатные сувениры</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-tour__side card-tour__side-back">
+                                    <div class="card-tour__backside-box">
+                                        <p class="card-tour__text card-tour__text-1">ПОЛНАЯ СТОИМОСТЬ:</p>
+                                        <p class="card-tour__text card-tour__text-2">5990₽</p>
+                                        <a class="btn__a">
+                                            ЗАБРОНИРОВАТЬ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tac">
+                    <button class="button-first button-first__animation">
+                        ЗАБРОНИРОВАТЬ
+                    </button>
+                </div>
+            </section>
+
+            <section class="section-feedback">
+                <div class="tac mb-80">
+                    <h2 class="title-secondary title-secondary__white mb-80">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+                </div>
+                <div class="row">
+                    <div class="feedback-card">
+                        <figure class="feedback-card__img">
+                            <img src="src/img/feedback2 (1).jpg" alt="">
+                            <figcaption class="feedback-card__name">
+                                ЛИЗА ФРОЛОВА
+                            </figcaption>
+                        </figure>
+                        <div class="feedback-card__box">
+                            <h3 class="title-third mb-10">Я ПОЛУЧИЛ МАССУ ВПЕЧАТЛЕНИЙ</h3>
+                            <p class="paragraph">
+                                Задача организации, в особенности же дальнейшее
+                                развитие различных форм деятельности влечет за
+                                собой процесс внедрения и модернизации
+                                соответствующий условий активизации. Таким
+                                образом начало повседневной работы по
+                                формированию позиции влечет.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="feedback-card">
+                        <figure class="feedback-card__img">
+                            <img src="src/img/feedback2 (2).jpg" alt="">
+                            <figcaption class="feedback-card__name">
+                                Антон Рябин
+                            </figcaption>
+                        </figure>
+                        <div class="feedback-card__box">
+                            <h3 class="title-third mb-10">Я ПОЛУЧИЛ МАССУ ВПЕЧАТЛЕНИЙ</h3>
+                            <p class="paragraph">
+                                Задача организации, в особенности же дальнейшее
+                                развитие различных форм деятельности влечет за
+                                собой процесс внедрения и модернизации
+                                соответствующий условий активизации. Таким
+                                образом начало повседневной работы по
+                                формированию позиции влечет.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tac">
+                    <button class="button-first button-first__animation">
+                        ЗАБРОНИРОВАТЬ
+                    </button>
+                </div>
+            </section>
+
+            <section class="section-book">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+                            <form action="#" class="form">
+                                <div class="tac mb-30">
+                                    <h2 class="title-secondary">ЗАБРОНИРОВАТЬ ТУР</h2>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Имя Фамилия" id="name">
+                                    <label for="name" class="form__label">Введите Имя</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="Email" id="email">
+                                    <label for="email" class="form__label">Введите email</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio" id="tour-1" name="cheked">
+                                        <label for="tour-1" class="form__input-label"><span
+                                                class="form__button-radio"></span> Групповой тур</label>
+                                    </div>
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio" id="tour-2" name="cheked">
+                                        <label for="tour-2" class="form__input-label"><span
+                                                class="form__button-radio"></span> Индивидуальный тур</label>
+                                    </div>
+                                </div>
+
+                                <div class="form__group">
+                                    <button class="button-first btn-brown">
+                                        ЗАБРОНИРОВАТЬ
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
 
+        <footer class="footer">
+            <div class="row">
+                <img src="src/img/Icon-logo.svg" alt="#" class="footer__logo">
+            </div>
+            <div class="row">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">о нас</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">скидки</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">лучшие туры</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">калькулятор цен</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">связаться с нами</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
-
-
-
 
 
 
@@ -136,7 +345,7 @@
             <div class="col-1-of-2">
                 col-1-of-2
             </div>
-        </div>
+        </div
         
         <div class="row">
             <div class="col-1-of-2">
